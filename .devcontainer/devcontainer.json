@@ -5,7 +5,7 @@
     "dockerfile": "Dockerfile"
   },
 
-  "onCreateCommand": "lake exe cache get",
+  "updateContentCommand": "lake exe cache get",
 
   "hostRequirements": {
     "cpus": 4,
@@ -15,6 +15,9 @@
   "customizations": {
     "vscode": {
       "extensions": ["leanprover.lean4"]
+    },
+    "codespaces": {
+      "openFiles": ["LeanTemplate/Basic.lean"]
     }
   }
 }
